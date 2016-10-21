@@ -15,7 +15,7 @@ public class FPP17P {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) {//DECLARACION DE VARIABLES TIPO STRING
   int a,b,c;
 a=PedirNumero("Numero 1");
 b=PedirNumero("Numero 2");
@@ -23,13 +23,13 @@ c=MCD(a,b);
 Mostrar(a,b,c);
 
 }
-public static int PedirNumero(String mat){
+public static int PedirNumero(String mat){//PEDIR DATOS EN STRING Y GUARDARLOS
 Scanner entrada = new Scanner(System.in);
 System.out.print("Ingrese el " + mat + "\n" );
 int num=entrada.nextInt();
 return num;
 }
-public static int MCD(int a, int b){
+public static int MCD(int a, int b){//REVISAR Y CALCULAR EL MCD DE LOS DATOS DEL STRING
 int c=0,m;
 m=a;
 if(m>b)m=b;
@@ -40,6 +40,6 @@ c=i;
 return c;
 }
 public static void Mostrar(int a,int b,int c){
-System.out.println("El MCD es "+c);
+System.out.println("El MCD es "+c);//IMPRIMIR
 }
 }
